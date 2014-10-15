@@ -2,4 +2,4 @@
   
   //put jQuery code here
   
-})(jQuery)
+})(jQuery);
