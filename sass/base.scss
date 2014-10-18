@@ -1,8 +1,8 @@
 /**
  * @file base.scss
  *   Defaults. They are almost exclusively single element selectors but it
- *   could include attribute selectors, pseudo-class selectors, child
- *   selectors or sibling selectors. Essentially, a base style says that
+ *   could include attribute selectors, pseudo-class selectors, helper classes,
+ *   child selectors or sibling selectors. Essentially, a base style says that
  *   wherever this element is on the page, it should look like this.
  */
 
@@ -22,7 +22,7 @@ html {
 }
 body {
   font-family: $serif;
-  font-size: 1.8rem;
+  font-size: 1.4em;
   font-weight: 300;
 	font-family:'adobe_garamondregular';
 }
@@ -56,4 +56,62 @@ a {
     color: $color-1;
     text-decoration: underline;
   }
+}
+
+
+//  HELPER CLASSES 
+//
+//  I also like to include helper classes in base, because
+//  they are 'base styles' and don't belong to any components
+ 
+//padding helpers
+.padding-top {
+  padding-top:$spacing;
+}
+.padding-bottom {
+  padding-bottom:$spacing;
+}
+.padding-top-bottom {
+  padding-top:$spacing;
+  padding-bottom:$spacing;
+}
+
+//margin helpers
+.margin-top {
+  margin-top:$spacing;
+}
+.margin-bottom {
+  margin-bottom:$spacing;
+}
+.margin-top-bottom {
+  margin-top:$spacing;
+  margin-bottom:$spacing;
+}
+
+//positioning helpers
+.absolute-center {
+  position:absolute;
+  left:50%;
+  top:50%;
+  @include translateX(-50%);
+  @include translateY(-50%);
+}
+.absolute-x {
+  position:absolute;
+  left:50%;
+  @include translateX(-50%);
+}
+.absolute-y {
+  position:absolute;
+  top:50%;
+  @include translateY(-50%);
+}
+.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+//borders & corners
+.rounded {
+  @include border-radius($radius);
 }

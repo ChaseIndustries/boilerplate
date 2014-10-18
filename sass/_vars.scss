@@ -4,20 +4,13 @@
 // Font size
 $font-base: percentage(10 / 16);  // 1rem = 10px
 
+// Font stacks
+$serif: "Times",serif;
+$sans-serif: "Helvetica",sans-serif;
+
 // Colors
 $color-1:black;
 $color-2:red;
-
-// Font stacks
-$serif: serif;
-$sans-serif: sans-serif;
-$sans-serif-alt: sans-serif;
-
-// Social Media colors
-$twitter: #5ed0ff;
-$facebook: #4974cf;
-$youtube: #e44b3c;
-$rss: #ff9707;
 
 //Bootstrap Breakpoints
 $break-xs: 768px;
@@ -25,3 +18,5 @@ $break-sm: 992px;
 $break-md: 1200px;
 
 // Other Arbitrary Values
+$spacing: 15px;
+$radius: 5px;
