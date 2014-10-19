@@ -7,6 +7,7 @@
  */
 
 @import "vars";
+@import "mixins";
 
 //base styles
 * {
@@ -56,62 +57,4 @@ a {
     color: $color-1;
     text-decoration: underline;
   }
-}
-
-
-//  HELPER CLASSES 
-//
-//  I also like to include helper classes in base, because
-//  they are 'base styles' and don't belong to any components
- 
-//padding helpers
-.padding-top {
-  padding-top:$spacing;
-}
-.padding-bottom {
-  padding-bottom:$spacing;
-}
-.padding-top-bottom {
-  padding-top:$spacing;
-  padding-bottom:$spacing;
-}
-
-//margin helpers
-.margin-top {
-  margin-top:$spacing;
-}
-.margin-bottom {
-  margin-bottom:$spacing;
-}
-.margin-top-bottom {
-  margin-top:$spacing;
-  margin-bottom:$spacing;
-}
-
-//positioning helpers
-.absolute-center {
-  position:absolute;
-  left:50%;
-  top:50%;
-  @include translateX(-50%);
-  @include translateY(-50%);
-}
-.absolute-x {
-  position:absolute;
-  left:50%;
-  @include translateX(-50%);
-}
-.absolute-y {
-  position:absolute;
-  top:50%;
-  @include translateY(-50%);
-}
-.center {
-  margin-left:auto;
-  margin-right:auto;
-}
-
-//borders & corners
-.rounded {
-  @include border-radius($radius);
 }
