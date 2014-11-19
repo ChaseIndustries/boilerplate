@@ -68,6 +68,7 @@
 	border-bottom-style:solid;
 	border-bottom-color:$color;
 	display:inline-block;
+	content:"";
 }
 
 @mixin arrow-down($size : 10px, $color : #000) {
@@ -79,6 +80,7 @@
 	border-top-style:solid;
 	border-top-color:$color;
 	display:inline-block;
+	content:"";
 }
 
 @mixin arrow-right($size : 10px, $color : #000) {
@@ -90,6 +92,7 @@
 	border-left-style:solid;
 	border-left-color:$color;
 	display:inline-block;
+	content:"";
 }
 
 @mixin arrow-left($size : 10px, $color : #000) {
@@ -101,4 +104,5 @@
 	border-right-style:solid;
 	border-right-color:$color;
 	display:inline-block;
+	content:"";
 }

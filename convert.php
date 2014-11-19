@@ -20,8 +20,11 @@
                 curl_setopt($ch, CURLOPT_HEADER, 0);
                 curl_setopt($ch, CURLOPT_URL, $_SERVER['HTTP_HOST'] . "/" . $file);
                 curl_setopt($ch, CURLOPT_FILE, $html_file); 
-                curl_exec($ch);
+                if(curl_exec($ch)){
+                  echo "<div style='color:green'>Successfully converted <strong>". $file . "</strong></div>"; 
+                }
                 curl_close($ch);
+                
              }
           }
           closedir($dir);
