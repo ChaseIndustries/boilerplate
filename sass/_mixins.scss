@@ -3,15 +3,15 @@
 //
  
 //padding helpers
-@mixin padding-top-bottom(){
-  padding-top:$spacing;
-  padding-bottom:$spacing;
+@mixin padding-top-bottom($amount : $spacing){
+  padding-top:$amount;
+  padding-bottom:$amount;
 }
 
 //margin helpers
-@mixin margin-top-bottom(){
-  margin-top:$spacing;
-  margin-bottom:$spacing;
+@mixin margin-top-bottom($amount : $spacing){
+  margin-top:$amount;
+  margin-bottom:$amount;
 }
 
 //positioning helpers

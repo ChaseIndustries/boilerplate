@@ -16,6 +16,7 @@
 	text-decoration:none;
 	list-style:none;
 	@include text-shadow(none);
+	outline:0; //to prevent highlighting on links
 }
 
 html {
