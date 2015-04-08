@@ -19,15 +19,18 @@
   position:absolute;
   left:50%;
   top:50%;
-  @if $width {
+  @if $width and $height {
     margin-left:-.5 * $width;
-  } @else {
+  } @else if not $height {
     @include translateX(-50%);
   }
-  @if $height {
-    margin-top:-.5 * $height
-  } @else {
+  @if $height and not $width {
+    margin-top:-.5 * $height;
+  } @else if not $width {
     @include translateY(-50%);
+  }
+  @if $height and $width {
+    @include translate3d(-50%, -50%, 0);
   }
 }
 @mixin absolute-x($width){
